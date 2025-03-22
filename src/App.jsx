@@ -1,22 +1,34 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Post from "./Post.jsx";
+import "./style.css";
+import "./color.css";
+import logo from "./img/LogoWhite.png";
 
 function App() {
-    console.log("App.jsx rendu !");
     return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
-        </Router>
+        <div>
+            <div className="row">
+                <div className="column left">
+                    <div className="logo-home">
+                        <img src={logo} alt="Logo" />
+                    </div>
+                    <div className="navigation-icon">
+                        <ul>
+                            <li><i className="fa-solid fa-house"></i></li>
+                            <li><i className="fa-solid fa-user"></i></li>
+                            <li><i className="fa-solid fa-calendar"></i></li>
+                            <li><i className="fa-solid fa-comment"></i></li>
+                            <li><i className="fa-solid fa-trash"></i></li>
+                            <li><i className="fa-solid fa-chart-simple"></i></li>
+                            <li><i className="fa-solid fa-moon"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="column right">
+
+                </div>
+            </div>
+        </div>
     );
 }
 
