@@ -1,4 +1,7 @@
  :root {
-
-     --primary-color: #7040f6;
+          --bg-color: #FFF5F0;
+          --titre-color-blue:#2E3A59;
+          --titre-color-orange:#FF8D4D;
+          --boxshadow-color: #FFBE99;
+          --bg-card: #FFEFE5;
 }
