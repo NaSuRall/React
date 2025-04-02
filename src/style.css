@@ -133,6 +133,7 @@ section .titre{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 section .titre p{
     text-align: center;
@@ -143,7 +144,7 @@ section button{
     height: 40px;
     border-radius: 10px;
     font-size: 15px;
-    margin:20px;
+    margin:30px;
     background-color: var(--bg-white);
 }
 
@@ -164,7 +165,7 @@ section button{
     padding: 20px;
     border-radius: 10px;
     width: 400px;
-    height: 180px;
+    height: 200px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -175,7 +176,7 @@ section button{
     transition: 0.2s all ease-in-out;
     & h2{
         background-color: transparent;
-        padding: 10px;
+        padding: 10px 0px;
     }
 
     & p{
@@ -199,10 +200,11 @@ section button{
     justify-content: center;
     border-radius: 5px;
     border: 2px solid black;
+
+    & svg{
+        color: #000000;
+        background-color: black;
+        font-size: 20px;
+    }
 }
 
-.icon-container svg {
-    color: #000000;
-    background-color: black;
-    font-size: 20px;
-}

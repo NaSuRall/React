@@ -1,6 +1,6 @@
 import Card from "./Card.jsx";
 
-export default function Section({titleButton,Title, SubTitle, cards}) {
+export default function Section({titleButton,Title, SubTitle, cards = []}) {
 
     return <div>
         <section>
@@ -10,16 +10,19 @@ export default function Section({titleButton,Title, SubTitle, cards}) {
                 <p>{SubTitle}</p>
             </div>
 
-            <div className="cards-container">
-                {cards.map((card, index) => (
-                    <Card
-                        key={index}
-                        title={card.title}
-                        description={card.description}
-                        backgroundColor={card.backgroundColor}
-                    />
-                ))}
-            </div>
+            {cards.length > 0 && (
+                <div className="cards-container">
+                    {cards.map((card, index) => (
+                        <Card
+                            key={index}
+                            title={card.title}
+                            description={card.description}
+                            backgroundColor={card.backgroundColor}
+                            icon={card.icon}
+                        />
+                    ))}
+                </div>
+            )}
 
         </section>
     </div>
