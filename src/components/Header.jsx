@@ -1,10 +1,13 @@
-export function Header() {
+import React from "react";
+import imgTest from '../assets/imgTest.png';
+
+export default function Header() {
 
     return <div>
         <div className="row">
             <div className="column left">
                 <div className="CardImg">
-                    <img src="./public/assets/imgTest.png" alt=""/>
+                    <img src={imgTest} alt="imgTest"/>
                 </div>
             </div>
             <div className="column right">
@@ -21,9 +24,9 @@ export function Header() {
                     </p>
                 </div>
                 <div className="blockchiffre">
-                    <p>+20 <span>Projets Réalises</span></p>
-                    <p>+13 <span>Technologies Maitrisées</span></p>
-                    <p>+4 <span>Années d'Experience</span></p>
+                    <p>+20 <span>Projets Réalisés</span></p>
+                    <p>+13 <span>Technologies Maîtrisées</span></p>
+                    <p>+4 <span>Années d'Expérience</span></p>
                 </div>
             </div>
         </div>
